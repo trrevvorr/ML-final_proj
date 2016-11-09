@@ -5,9 +5,9 @@
 ## Data Homepage
 [Adult Data Set ](https://archive.ics.uci.edu/ml/datasets/Adult)
 ## Data Attributes
-#### age 
-continuous   
-#### workclass 
+#### age
+continuous
+#### workclass
 * Private
 * Self-emp-not-inc
 * Self-emp-inc
@@ -15,10 +15,10 @@ continuous
 * Local-gov
 * State-gov
 * Without-pay
-* Never-worked  
-#### fnlwgt 
-continuous 
-#### education 
+* Never-worked
+#### fnlwgt
+continuous
+#### education
 * Bachelors
 * Some-college
 * 11th
@@ -34,10 +34,10 @@ continuous
 * 10th
 * Doctorate
 * 5th-6th
-* Preschool  
-#### education-num 
+* Preschool
+#### education-num
 continuous
-#### marital-status 
+#### marital-status
 * Married-civ-spouse
 * Divorced
 * Never-married
@@ -60,27 +60,27 @@ continuous
 * Priv-house-serv
 * Protective-serv
 * Armed-Forces
-#### relationship 
+#### relationship
 * Wife
 * Own-child
 * Husband
 * Not-in-family
 * Other-relative
 * Unmarried
-#### race 
+#### race
 * White
 * Asian-Pac-Islander
 * Amer-Indian-Eskimo
 * Other
 * Black
-#### sex 
+#### sex
 * Female
-* Male 
-#### capital-gain 
+* Male
+#### capital-gain
 continuous
-#### capital-loss 
+#### capital-loss
 continuous
-#### hours-per-week 
+#### hours-per-week
 continuous
 #### native-country United-States
 * Cambodia
@@ -111,7 +111,7 @@ continuous
 * Ecuador
 * Taiwan
 * Haiti
-*  Columbia
+*Columbia
 * Hungary
 * Guatemala
 * Nicaragua
