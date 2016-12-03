@@ -10,18 +10,6 @@ X = Xtrain;
 Y = Ytrain;
 N = size(X, 2); % number of samples
 D = size(X, 1) - 1; % feature dimensions
-
-%find the positive and negative data
-posIdx = find(Y==1);
-negIdx = find(Y==-1);
-
-%get the minimum and maximum of the data
-maxX1 = max(X(2,:)); 
-minX1 = min(X(2,:));
-
-maxX2 = max(X(3,:)); 
-minX2 = min(X(3,:));
-
 T = 1; % maximum iterations
 w = zeros(D+1,1); % w is a 3* 1 vector, initialized as 0
 
@@ -58,8 +46,8 @@ for t = 1:T
     end
 end
 
-disp(['PLA error rate: ', num2str(error/N)])
-disp(['Pocket PLA error rate: ', num2str(pocket_err/N)])
+disp(['PLA training error rate: ', num2str(error/N)])
+disp(['Pocket PLA training error rate: ', num2str(pocket_err/N)])
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TEST DATA
@@ -68,18 +56,8 @@ X = Xtest;
 Y = Ytest;
 N = size(X, 2); % number of samples
 D = size(X, 1) - 1; % feature dimensions
-
-%find the positive and negative data
-posIdx = find(Y==1);
-negIdx = find(Y==-1);
-
-%get the minimum and maximum of the data
-maxX1 = max(X(2,:)); 
-minX1 = min(X(2,:));
-maxX2 = max(X(3,:)); 
-minX2 = min(X(3,:));
-
 T = 1; % maximum iterations
+
 % PLA
 w = w;
 for t = 1:T 
@@ -95,7 +73,7 @@ for t = 1:T
         break;
     end
 end
-disp(['PLA error rate: ', num2str(error/N)])
+disp(['PLA test error rate: ', num2str(error/N)])
 
 % Pocket PLA
 w = pocket_w;
@@ -112,4 +90,4 @@ for t = 1:T
         break;
     end
 end
-disp(['Pocket PLA error rate: ', num2str(error/N)])
+disp(['PocketPLA test error rate: ', num2str(error/N)])
