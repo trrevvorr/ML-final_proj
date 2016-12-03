@@ -29,6 +29,7 @@ continuous
 * Widowed
 * Married-spouse-absent
 * Married-AF-spouse
+
 #### occupation
 * Tech-support
 * Craft-repair
@@ -44,6 +45,7 @@ continuous
 * Priv-house-serv
 * Protective-serv
 * Armed-Forces
+
 #### relationship
 * Wife
 * Own-child
@@ -51,18 +53,23 @@ continuous
 * Not-in-family
 * Other-relative
 * Unmarried
+
 #### race
 * White
 * Asian-Pac-Islander
 * Amer-Indian-Eskimo
 * Other
 * Black
+
 #### sex
 * Female
 * Male
+
 #### capital-gain
 continuous
+
 #### capital-loss
 continuous
+
 #### hours-per-week
 continuous
